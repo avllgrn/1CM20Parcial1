@@ -2,20 +2,17 @@
 
 int main(void){
 
-    printf("%f\n",2.0+3.0);
-    printf("%f\n",2.0-3.0);
-    printf("%f\n",2.0*3.0);
-    printf("%f\n\n",2.0/3.0);
+    printf("\\ \n\n");
 
-    printf("2.0\t+\t3\t=\t%f\n",2.0+3.0);
-    printf("2.0\t-\t3\t=\t%f\n",2.0-3.0);
-    printf("2.0\t*\t3\t=\t%f\n",2.0*3.0);
-    printf("2.0\t/\t3\t=\t%f\n\n",2.0/3.0);
+    printf("%% \n\n");
 
-    printf("%f\t+\t%f\t=\t%f\n",2.0,3.0,2.0+3.0);
-    printf("%f\t-\t%f\t=\t%f\n",2.0,3.0,2.0-3.0);
-    printf("%f\t*\t%f\t=\t%f\n",2.0,3.0,2.0*3.0);
-    printf("%f\t/\t%f\t=\t%f\n\n",2.0,3.0,2.0/3.0);
+    printf("\' \n\n");
+
+    printf("\" \n\n");
+
+    printf("0 %cC = 32%cF \n\n",248,248);
+
+    printf("%c + %c = %c \n\n",172,172,171);
 
     return 0;
 }
