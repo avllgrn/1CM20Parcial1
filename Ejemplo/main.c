@@ -2,23 +2,20 @@
 
 int main(void){
 
-    printf("%d\n",2+3);
-    printf("%d\n",2-3);
-    printf("%d\n",2*3);
-    printf("%d\n",2/3);
-    printf("%d\n\n",2%3);
+    printf("%f\n",2.0+3.0);
+    printf("%f\n",2.0-3.0);
+    printf("%f\n",2.0*3.0);
+    printf("%f\n\n",2.0/3.0);
 
-    printf("2\t+\t3\t=\t%d\n",2+3);
-    printf("2\t-\t3\t=\t%d\n",2-3);
-    printf("2\t*\t3\t=\t%d\n",2*3);
-    printf("2\t/\t3\t=\t%d\n",2/3);
-    printf("2\t%%\t3\t=\t%d\n\n",2%3);
+    printf("2.0\t+\t3\t=\t%f\n",2.0+3.0);
+    printf("2.0\t-\t3\t=\t%f\n",2.0-3.0);
+    printf("2.0\t*\t3\t=\t%f\n",2.0*3.0);
+    printf("2.0\t/\t3\t=\t%f\n\n",2.0/3.0);
 
-    printf("%d\t+\t%d\t=\t%d\n",2,3,2+3);
-    printf("%d\t-\t%d\t=\t%d\n",2,3,2-3);
-    printf("%d\t*\t%d\t=\t%d\n",2,3,2*3);
-    printf("%d\t/\t%d\t=\t%d\n",2,3,2/3);
-    printf("%d\t%%\t%d\t=\t%d\n\n",2,3,2%3);
+    printf("%f\t+\t%f\t=\t%f\n",2.0,3.0,2.0+3.0);
+    printf("%f\t-\t%f\t=\t%f\n",2.0,3.0,2.0-3.0);
+    printf("%f\t*\t%f\t=\t%f\n",2.0,3.0,2.0*3.0);
+    printf("%f\t/\t%f\t=\t%f\n\n",2.0,3.0,2.0/3.0);
 
     return 0;
 }
