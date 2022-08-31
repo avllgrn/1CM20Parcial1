@@ -5,14 +5,14 @@ int main(void){
     float g,r;
 
     //1. Pide datos
-    printf("Dame g ");
-    scanf("%f",&g);
+    printf("Dame r ");
+    scanf("%f",&r);
 
     //2. Calcula formula(s)
-    r = g*M_PI/180.0;
+    g = 180.0*r/M_PI;
 
     //3. Muestra resultado(s)
-    printf("%f grads = %f rads\n",g,r);
+    printf("%f rads = %f grads\n",r,g);
 
     return 0;
 }
