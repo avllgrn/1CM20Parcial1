@@ -1,18 +1,23 @@
 #include <stdio.h>
 
 int main(void){
+    float b,h,a,p;
 
-    printf("\\ \n\n");
+    //1. Pide datos
+    printf("Dame base ");
+    scanf("%f",&b);
+    printf("Dame altura ");
+    scanf("%f",&h);
 
-    printf("%% \n\n");
+    //2. Calcula formula(s)
+    a=b*h;
+    p=2*b+2*h;
 
-    printf("\' \n\n");
-
-    printf("\" \n\n");
-
-    printf("0 %cC = 32%cF \n\n",248,248);
-
-    printf("%c + %c = %c \n\n",172,172,171);
+    //3. Muestra resultado(s)
+    printf("Base:\t\t%f\n",b);
+    printf("Alura:\t\t%f\n",h);
+    printf("Area:\t\t%f\n",a);
+    printf("Perimetro:\t%f\n",p);
 
     return 0;
 }
