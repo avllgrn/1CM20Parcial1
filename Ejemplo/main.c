@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void){
-    float f,c;
+    float g,r;
 
     //1. Pide datos
-    printf("Dame f ");
-    scanf("%f",&f);
+    printf("Dame g ");
+    scanf("%f",&g);
 
     //2. Calcula formula(s)
-    c = 5.0/9.0*(f-32);
+    r = g*M_PI/180.0;
 
     //3. Muestra resultado(s)
-    printf("%f %cC = %f %cF\n",f,248,c,248);
+    printf("%f grads = %f rads\n",g,r);
 
     return 0;
 }
