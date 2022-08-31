@@ -4,14 +4,14 @@ int main(void){
     float f,c;
 
     //1. Pide datos
-    printf("Dame c ");
-    scanf("%f",&c);
+    printf("Dame f ");
+    scanf("%f",&f);
 
     //2. Calcula formula(s)
-    f = 9.5/5.0*c + 32;
+    c = 5.0/9.0*(f-32);
 
     //3. Muestra resultado(s)
-    printf("%f %cC = %f %cF\n",c,248,f,248);
+    printf("%f %cC = %f %cF\n",f,248,c,248);
 
     return 0;
 }
