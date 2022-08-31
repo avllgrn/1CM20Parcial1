@@ -1,21 +1,19 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(void){
-    float b,h,a,p;
+    float r,a,p;
 
     //1. Pide datos
-    printf("Dame base ");
-    scanf("%f",&b);
-    printf("Dame altura ");
-    scanf("%f",&h);
+    printf("Dame radio ");
+    scanf("%f",&r);
 
     //2. Calcula formula(s)
-    a=b*h;
-    p=2*b+2*h;
+    a=M_PI * pow(r,2);
+    p=2*M_PI*r;
 
     //3. Muestra resultado(s)
-    printf("Base:\t\t%f\n",b);
-    printf("Alura:\t\t%f\n",h);
+    printf("Radio:\t\t%f\n",r);
     printf("Area:\t\t%f\n",a);
     printf("Perimetro:\t%f\n",p);
 
