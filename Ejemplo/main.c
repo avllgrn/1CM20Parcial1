@@ -2,23 +2,19 @@
 #include <math.h>
 
 int main(void){
-    float x1,y1,x2,y2,m;
+    float v,d,t;
 
     //1. Pide datos
-    printf("Dame x1 ");
-    scanf("%f",&x1);
-    printf("Dame y1 ");
-    scanf("%f",&y1);
-    printf("Dame x2 ");
-    scanf("%f",&x2);
-    printf("Dame y2 ");
-    scanf("%f",&y2);
+    printf("Dame distancia ");
+    scanf("%f",&d);
+    printf("Dame tiempo ");
+    scanf("%f",&t);
 
     //2. Calcula formula(s)
-    m = (y2-y1) / (x2-x1);
+    v = d / t;
  
     //3. Muestra resultado(s)
-    printf("m = %f\n",m);
+    printf("v = %f\n",v);
 
     return 0;
 }
