@@ -6,14 +6,14 @@ int main(void){
     float mph;
 
     //1. Pide datos
-    printf("Dame km/h ");
-    scanf("%f",&kmh);
+    printf("Dame mph ");
+    scanf("%f",&mph);
 
     //2. Calcula formula(s)
-    mph = kmh * 0.621371;
+    kmh = mph / 0.621371;
  
     //3. Muestra resultado(s)
-    printf("%f km/h = %f mph\n",kmh,mph);
+    printf("%f mph = %f lm/h\n",mph,kmh);
 
     return 0;
 }
