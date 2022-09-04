@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(void){
-    float x1,y1,x2,y2,d;
+    float x1,y1,x2,y2,m;
 
     //1. Pide datos
     printf("Dame x1 ");
@@ -15,10 +15,10 @@ int main(void){
     scanf("%f",&y2);
 
     //2. Calcula formula(s)
-    d = sqrt(pow(y2-y1,2) + pow(x2-x1,2));
+    m = (y2-y1) / (x2-x1);
  
     //3. Muestra resultado(s)
-    printf("d = %f\n",d);
+    printf("m = %f\n",m);
 
     return 0;
 }
