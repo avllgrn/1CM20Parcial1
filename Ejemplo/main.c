@@ -2,18 +2,18 @@
 #include <math.h>
 
 int main(void){
-    float g;
-    float lbs;
+    float kmh;
+    float mph;
 
     //1. Pide datos
-    printf("Dame lbs ");
-    scanf("%f",&lbs);
- 
+    printf("Dame km/h ");
+    scanf("%f",&kmh);
+
     //2. Calcula formula(s)
-    g = lbs / 0.00220462;
+    mph = kmh * 0.621371;
  
     //3. Muestra resultado(s)
-    printf("%f lbs = %f g\n",lbs,g);
+    printf("%f km/h = %f mph\n",kmh,mph);
 
     return 0;
 }
