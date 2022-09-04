@@ -6,14 +6,14 @@ int main(void){
     float lbs;
 
     //1. Pide datos
-    printf("Dame g ");
-    scanf("%f",&g);
+    printf("Dame lbs ");
+    scanf("%f",&lbs);
  
     //2. Calcula formula(s)
-    lbs = g * 0.00220462;
+    g = lbs / 0.00220462;
  
     //3. Muestra resultado(s)
-    printf("%f g = %flbs\n",g,lbs);
+    printf("%f lbs = %f g\n",lbs,g);
 
     return 0;
 }
