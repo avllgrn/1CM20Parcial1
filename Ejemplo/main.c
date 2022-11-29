@@ -6,19 +6,19 @@ int main(void){
     printf("Ingresa tu edad ");
     scanf("%d",&edad);
 
-    if(edad<0){
-        printf("Error! (-)\n");
+    if(edad >= 134){
+        printf("Error! (+)\n");
     }
     else{
-        if(edad<18){
-            printf("No pasas!\n");
+        if(edad >= 18){
+            printf("Pasas!\n");
         }
         else{
-            if(edad < 134){
-                printf("Pasas!\n");
+            if(edad >= 0){
+                printf("No pasas!\n");
             }
             else{
-                printf("Error! (+)\n");
+                printf("Error! (-)\n");
             }
         }
     }
