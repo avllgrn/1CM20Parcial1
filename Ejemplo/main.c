@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int esCaracterNumerico(char caracter);
+int esCaracterMayuscula(char caracter);
 
 int main(void){
     char caracter;
@@ -8,7 +8,7 @@ int main(void){
     printf("Ingresa un caracter ");
     scanf("%c",&caracter);
 
-    if(esCaracterNumerico(caracter)){
+    if(esCaracterMayuscula(caracter)){
         printf("Si es.\n\n");
     }
     else{
@@ -17,13 +17,12 @@ int main(void){
 
     return 0;
 }
-int esCaracterNumerico(char caracter){
-
-    if(caracter < 48){
+int esCaracterMayuscula(char caracter){
+    if(caracter < 65){
         return 0;
     }
     else{
-        if(caracter <= 57){
+        if(caracter <= 90){
             return 1;
         }
         else{
