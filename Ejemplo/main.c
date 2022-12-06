@@ -1,27 +1,33 @@
 #include <stdio.h>
 
+int esCaracterNumerico(char caracter);
+
 int main(void){
-    int edad;
+    char caracter;
 
-    printf("Ingresa tu edad ");
-    scanf("%d",&edad);
+    printf("Ingresa un caracter ");
+    scanf("%c",&caracter);
 
-    if(edad >= 134){
-        printf("Error! (+)\n");
+    if(esCaracterNumerico(caracter)){
+        printf("Si es.\n\n");
     }
     else{
-        if(edad >= 18){
-            printf("Pasas!\n");
-        }
-        else{
-            if(edad >= 0){
-                printf("No pasas!\n");
-            }
-            else{
-                printf("Error! (-)\n");
-            }
-        }
+        printf("No es.\n\n");
     }
 
     return 0;
+}
+int esCaracterNumerico(char caracter){
+
+    if(caracter < 48){
+        return 0;
+    }
+    else{
+        if(caracter <= 57){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
 }
