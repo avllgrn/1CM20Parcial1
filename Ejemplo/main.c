@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+int esCaracterNumerico(char caracter);
 int esCaracterMayuscula(char caracter);
 int esCaracterMinuscula(char caracter);
 int esLetra(char caracter);
+int esCaracterEspecial(char caracter);
 
 int main(void){
     char caracter;
@@ -10,7 +12,7 @@ int main(void){
     printf("Ingresa un caracter ");
     scanf("%c",&caracter);
 
-    if(esLetra(caracter)){
+    if(esCaracterEspecial(caracter)){
         printf("Si es.\n\n");
     }
     else{
@@ -18,6 +20,19 @@ int main(void){
     }
 
     return 0;
+}
+int esCaracterNumerico(char caracter){
+    if(caracter < 48){
+        return 0;
+    }
+    else{
+        if(caracter <= 57){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
 }
 int esCaracterMayuscula(char caracter){
     if(caracter < 65){
@@ -55,6 +70,19 @@ int esLetra(char caracter){
         }
         else{
             return 0;
+        }
+    }
+}
+int esCaracterEspecial(char caracter){
+    if(esLetra(caracter)){
+        return 0;
+    }
+    else{
+        if(esCaracterNumerico(caracter)){
+            return 0;
+        }
+        else{
+            return 1;
         }
     }
 }
