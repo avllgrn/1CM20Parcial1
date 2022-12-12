@@ -1,49 +1,23 @@
 #include <stdio.h>
 int main(void){
-    char estadoCvil;
-    printf("Ingresa un estadoCvil ");
-    scanf("%c",&estadoCvil);
-
-    if(estadoCvil == 's'){
-        printf("soltero\n");
+    char genero;
+    printf("Ingresa un genero ");
+    scanf("%c",&genero);
+    if(genero == 'f'){
+        printf("femenino\n");
+    }
+    else if(genero == 'F'){
+        printf("FEMENINO\n");
+    }
+    else if(genero == 'm'){
+        printf("masculino\n");
+    }
+    else if(genero == 'M'){
+        printf("MASCULINO\n");
     }
     else{
-        if(estadoCvil == 'S'){
-            printf("SOLTERO\n");
-        }
-        else{
-            if(estadoCvil == 'c'){
-                printf("casado\n");
-            }
-            else{
-                if(estadoCvil == 'C'){
-                    printf("CASADO\n");
-                }
-                else{
-                    if(estadoCvil == 'd'){
-                        printf("divorciado\n");
-                    }
-                    else{
-                        if(estadoCvil == 'D'){
-                            printf("DIVORCIADO\n");
-                        }
-                        else{
-                            if(estadoCvil == 'v'){
-                                printf("viudo\n");
-                            }
-                            else{
-                                if(estadoCvil == 'V'){
-                                    printf("VIUDO\n");
-                                }
-                                else{
-                                    printf("NO reconocido\n");
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        printf("NO reconnocido\n");
     }
+
     return 0;
 }
