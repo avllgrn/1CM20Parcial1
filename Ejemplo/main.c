@@ -1,15 +1,21 @@
 #include <stdio.h>
 
 int main(void){
-    int genero;
-    printf("Ingresa tu genero ");
-    scanf("%c",&genero);
+    int estadoCivil;
+    printf("Ingresa tu estadoCivil ");
+    scanf("%c",&estadoCivil);
 
-    if(genero=='f' || genero=='F'){
-        printf("Femenino");
+    if(estadoCivil=='s' || estadoCivil=='S'){
+        printf("Soltero");
     }
-    else if(genero=='m' || genero=='M'){
-        printf("Masculino");
+    else if(estadoCivil=='c' || estadoCivil=='C'){
+        printf("Casado");
+    }
+    else if(estadoCivil=='d' || estadoCivil=='D'){
+        printf("Divorciado");
+    }
+    else if(estadoCivil=='v' || estadoCivil=='V'){
+        printf("Viudo");
     }
     else{
         printf("NO reconocido");
