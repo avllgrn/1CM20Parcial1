@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 int main(void){
-    int edad;
-    printf("Ingresa tu edad ");
-    scanf("%d",&edad);
+    int genero;
+    printf("Ingresa tu genero ");
+    scanf("%c",&genero);
 
-    if(edad<0){
-        printf("Error! (-)");
+    if(genero=='f' || genero=='F'){
+        printf("Femenino");
     }
-    else if(0<=edad && edad<18){
-        printf("NO pasas");
-    }
-    else if(18<=edad && edad<133){
-        printf("Pasas");
+    else if(genero=='m' || genero=='M'){
+        printf("Masculino");
     }
     else{
-        printf("Error! (+)");
+        printf("NO reconocido");
     }
 
     return 0;
