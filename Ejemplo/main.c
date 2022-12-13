@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main(void){
+    int edad;
+    printf("Ingresa tu edad ");
+    scanf("%d",&edad);
 
-    printf("AND &&\n");
-    printf("%d\n", 0&&0);
-    printf("%d\n", 0&&1);
-    printf("%d\n", 1&&0);
-    printf("%d\n\n\n", 1&&1);
-
-    printf("OR ||\n");
-    printf("%d\n", 0||0);
-    printf("%d\n", 0||1);
-    printf("%d\n", 1||0);
-    printf("%d\n\n\n", 1||1);
-
-    printf("NOT !\n");
-    printf("%d\n", !0);
-    printf("%d\n\n\n", !1);
+    if(edad<0){
+        printf("Error! (-)");
+    }
+    else if(0<=edad && edad<18){
+        printf("NO pasas");
+    }
+    else if(18<=edad && edad<133){
+        printf("Pasas");
+    }
+    else{
+        printf("Error! (+)");
+    }
 
     return 0;
 }
