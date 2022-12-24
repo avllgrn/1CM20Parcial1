@@ -6,10 +6,10 @@ int main(void){
     int i;//Variable contador
 
     i = 0;//Variable que comienza en un numero
-    do{//Acaba en otro (en el infinito)
+    while( i<10 ){//Acaba en otro
         printf("%d ",i);//Se muestra cada valor que toma el contador
-        i = i - 1;//Retrocede de uno en uno
-    }while( 1 );
+        i = i + 1;//Avanza de uno en uno
+    }
 
     return 0;
 }
