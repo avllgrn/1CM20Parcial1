@@ -7,6 +7,7 @@ int main(void){
 
     i = 1;//Variable que comienza en un numero
     do{
+        printf("%d ",i);//Se muestra cada valor que toma el contador
         i = i + 1;//Avanza de uno en uno
     }while( 1 );//Acaba en otro (en el infinito)
 
