@@ -3,7 +3,7 @@
 int main(void){
     //Conjunto de instrucciones que se repite mientras 1 sea verdadero (siempre)
     //Ciclo infinto de conjunto vacio de instrucciones
-    while( 1 ){
+    for( ; 1 ; ){
 
     }
     return 0;
