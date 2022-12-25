@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 int main(void){
-    int a=2;
-    int b=3;
-    //Conjunto de instrucciones que se repite mientras a<b sea verdadero (siempre con 2 y 3)
-    //Ciclo infinto de conjunto vacio de instrucciones
-    do{
-
-    }while( a<b );
+    //Conjunto de instrucciones que se repite mientras 1 sea verdadero (siempre)
+    //Mensaje en un ciclo infinto
+    while( 1 ){
+        printf("Hola, mundo! ");
+    }
     return 0;
 }
