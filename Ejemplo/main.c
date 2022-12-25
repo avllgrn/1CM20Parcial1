@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main(void){
-    //Conjunto de instrucciones que se repite mientras 2<3 sea verdadero (siempre)
+    int a=2;
+    int b=3;
+    //Conjunto de instrucciones que se repite mientras a<b sea verdadero (siempre con 2 y 3)
     //Ciclo infinto de conjunto vacio de instrucciones
-    do{
+    for( ; a<b ; ){
 
-    }while( 2<3 );
+    }
     return 0;
 }
