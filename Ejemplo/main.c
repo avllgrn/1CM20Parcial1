@@ -8,11 +8,11 @@ void sumaDosNumeros(void);
 void raicesDeEcuacionCuadratica(void);
 
 int main(void){
-    int opcion=0;//Se fuerza al while a ejecutar al conjunto de instrucciones, al menos una vez
+    int opcion=0;//Se fuerza al for a ejecutar al conjunto de instrucciones, al menos una vez
 
     //Conjunto de instrucciones que se repite mientras la opcion no sea 5
     //Menu en un ciclo que se repite mientras opcion no sea 5
-    while(opcion != 5){
+    for( ; opcion != 5; ){
         system("cls");
         printf("1. Es par\n");
         printf("2. Es multiplo de 7\n");
