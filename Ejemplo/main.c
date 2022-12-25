@@ -1,77 +1,10 @@
 #include <stdio.h>
-#include <math.h>
-
-void esPar(void){
-    int x;
-    printf("Dame un numero ");scanf("%d",&x);
-    if(x%2==0){
-        printf("Es par\n");
-    }
-    else{
-        printf("NO es par\n");
-    }
-}
-void esMultiploDe7(void){
-    int x;
-    printf("Dame un numero ");scanf("%d",&x);
-    if(x%7==0){
-        printf("Es multiplo de 7\n");
-    }
-    else{
-        printf("NO es multiplo de 7\n");
-    }
-}
-void sumaDosNumeros(void){
-    int a, b, c;
-    printf("Dame un numero ");scanf("%d",&a);
-    printf("Dame otro numero ");scanf("%d",&b);
-    c=a+b;
-    printf("%d + %d = %d",a,b,c);
-}
-void raicesDeEcuacionCuadratica(void){
-    float a, b, c, x1, x2;
-    printf("Dame a ");scanf("%f",&a);
-    printf("Dame b ");scanf("%f",&b);
-    printf("Dame c ");scanf("%f",&c);
-    if(a==0){
-        printf("Error! Indeterminacion... =(\n\n");
-    }
-    else if(pow(b,2)-4*a*c < 0){
-        printf("Error! Raices imaginarias... =(\n\n");
-    }
-    else{
-        x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a);
-        x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a);
-        printf("x1 = %f\n",x1);
-        printf("x2 = %f\n",x2);
-    }
-}
 
 int main(void){
-    int opcion;
-    printf("1. Es par\n");
-    printf("2. Es multiplo de 7\n");
-    printf("3. Suma numeros\n");
-    printf("4. Formula General\n");
-    printf("5. Salir\n");
-    printf("Cual es tu opcio? ");
-    scanf("%d",&opcion);
-    switch(opcion){
-        case 1:esPar();
-            break;
-        case 2:esMultiploDe7();
-            break;
-        case 3:sumaDosNumeros();
-            break;
-        case 4:
-            raicesDeEcuacionCuadratica();
-            break;
-        case 5:
-            printf("Adios!\n");
-            break;
-        default:
-            printf("Opcion invalida!\n");
-            break;
+    //Conjunto de instrucciones que se repite mientras 1 sea verdadero (siempre)
+    //Ciclo infinto de conjunto vacio de instrucciones
+    while( 1 ){
+
     }
     return 0;
 }
